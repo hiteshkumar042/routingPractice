@@ -1,0 +1,9 @@
+<div class="main">
+        @for (user of users(); track user.id) {
+            <div [routerLink]="['/user',user.id]" class="container">
+                <p>{{user.name}}</p>
+            </div>
+        }
+  
+    
+</div>
